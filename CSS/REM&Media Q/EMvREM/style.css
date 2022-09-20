@@ -1,0 +1,26 @@
+* {
+  font-size: 16px;
+}
+
+div {
+  width: 25%;
+  height: 200px;
+  font-size: 32px;
+  display: inline-block;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#red {
+  background-color: red;
+}
+
+#em {
+  font-size: 2em;
+}
+
+#rem {
+  font-size: 2rem;
+}

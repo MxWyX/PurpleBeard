@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.card {
+  width: 400px;
+  border-radius: 6px;
+  margin: 30px 0px;
+  background-color: rgba(234, 234, 234);
+  align-items: center;
+}
+
+form {
+  padding: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 16px;
+  margin: 8px 0px;
+  border-radius: 2px;
+}
+
+body {
+  background-color: #274471;
+}

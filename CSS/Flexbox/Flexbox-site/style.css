@@ -1,0 +1,46 @@
+main, header, section, aside, footer {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+main {
+  background: #000000;
+}
+
+.header {
+  background: #03a9f4;
+}
+
+.hero {
+  background: #d22b1f;
+}
+
+.content {
+  background: #129a22;
+  flex: 1; /* flex statements can go inside our outside the media tag, they will not work until the container has become a flex container. */
+}
+
+.sidebar {
+  border: 1px solid #000000;
+  background: #673ab7;
+  flex: 0 1 300px; /* doing this make the code smaller however it will be less readabile as there is no flex container to tie this to before the media query is activated. */
+}
+
+.footer {
+  border: 1px solid #000000;
+  background: #616161;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 75rem;
+}
+
+@media screen and (min-width: 640px ) {
+  .flex-container {
+    display: flex;
+  }
+
+}

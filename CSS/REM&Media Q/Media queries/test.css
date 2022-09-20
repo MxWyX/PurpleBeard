@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+p {
+  font-size: 16px;
+  color: red;
+}
+/* the above is styled for mobile but if the screen is bigger than 600px it changes the font size to 32px to make it easier to read. */
+
+/* Media queries always go at the bottom of the CSS file. */
+
+/* active when the screen is larger than 600px across */
+@media screen and (min-width: 600px) {
+  body {
+    background-color: red;
+  }
+  
+  p {
+    font-size: 32px;
+    color: black;
+  }
+}
+/* active when the screen is larger than 1600pc across */
+@media screen and (min-width: 1600px) {
+  body {
+    background-color: purple;
+  }
+  
+  p {
+    font-size: 48px;
+    color: black;
+  }
+}
+/* if the scren is between 800px and 1000px then the screen will turn orange */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  body {
+    background-color: orange;
+  }
+  
+  p {
+    font-size: 24px;
+    color: black;
+  }
+}

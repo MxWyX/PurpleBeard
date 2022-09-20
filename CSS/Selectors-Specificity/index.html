@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our first CSS class</title>
+  <!-- head styling, not really used either but better than inline -->
+  <style>
+    h3 {
+      color: blue;
+    }
+  </style>
+  <!-- Best way of styling, use an external file and reference from the HTML file -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./example.css"> <!-- This is how you have 2 different styling CSS files -->
+</head>
+<body>
+  <header>
+    <h1 class='pink' id='yellow' style='color: red;'>This is our first use of CSS</h1> <!-- Inline styling, not ideal but usable for overiding classes and ids -->
+    <h3>Selectors and specificity</h3> <!-- syntax styling from style section in head-->
+  </header>
+  <main>
+    <h2 class='pink'>step 1</h2> <!-- class styling from styles files -->
+    <p id='yellow'>  <!-- Id styling from styles file-->
+      blah blah
+    </p>
+    <p class='pink' id='yellow'> <!-- The Id will take precident over the class tag -->
+      yip yip yipee 
+    </p>
+    <p style='color: yellow;' class='green' > <!-- the green class has the tag !important so it overwrites eveyrthing else  -->
+      bum bum buda bum
+    </p>
+    <p class='green' style='color:orange !important'> <!-- This makes the inline style overwrite the class despite the important tag in the class -->
+      yada yada yoo 
+    </p>
+  </main>
+</body>
+</html>
