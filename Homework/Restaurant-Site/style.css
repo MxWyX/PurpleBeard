@@ -17,6 +17,29 @@ img {
   width: 100%;
 }
 
+.section-title {
+  text-align: center;
+  margin: 2rem auto;
+  font-family: 'Rancho', cursive;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.section-title span{
+  display: block;
+  margin-top: 0.5rem;
+  color: #E76F51;
+}
+
+.btn {
+  background-color: #2A9D8F;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
 /* Header style start */
 header nav ul li {
   display: none;
@@ -75,9 +98,61 @@ header nav ul li {
 }
 /* Hero style end */
 
-/* Main style start */
+/* Specialities style start */
+.speciality-catagory {
+  color: #E76F51;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
 
-/* Main style end */
+.speciality-catagory::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+.speciality-description {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+
+.speciality-title {
+  font-size: 2.6rem;
+  display: block;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.speciality-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.speciality-image {
+  box-shadow: 5px 5px 15px rgba(200, 200, 200, 0.8);
+}
+/* Specialities style end */
 
 /* Footer style start */
 
@@ -92,7 +167,7 @@ header nav ul li {
   main {
     padding: 0;
   }
-
+/* Header start */
   header nav ul {
     display: flex;
     justify-content: space-between;
@@ -108,7 +183,8 @@ header nav ul li {
   #burger-menu {
     display: none;
   }
-
+/* Header end */
+/* Hero start */
   .hero {
     display: flex;
     padding: 1rem;
@@ -118,15 +194,50 @@ header nav ul li {
     padding: 1rem;
   }
 
-.hero-info-block {
-  display: block;
-}
+  .hero-info-block {
+    display: block;
+  }
 
-#hero-buttons {
-  justify-content: flex-start;
-}
+  #hero-buttons {
+    justify-content: flex-start;
+  }
 
   #hero-image{
     width: 375px;
   }
+  /* Hero end */
+  /* Specialities start */
+  .specialities {
+    padding: 2rem;
+    background-color: #EFEFEF;
+  }
+
+  .speciality-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .speciality-image {
+    width: 375px;
+  }
+
+  .price {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price span {
+    margin-bottom: 1rem;
+  }
+
+  .speciality-item:last-child .speciality-image{
+    order: 1;
+  }
+
+  .speciality-item:last-child .speciality-info{
+    order: 2;
+  }
+  /* Specialities end */
 }
