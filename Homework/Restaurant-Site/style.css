@@ -207,6 +207,81 @@ header nav ul li {
 }
 /* Menu end */
 
+/* Reviews start */
+.testimony-hero {
+  position: relative;
+}
+
+.testimony-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  /*  */
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.4rem;
+  width: 80%;
+  height: 100%;
+  font-weight: lighter;
+}
+
+.testimony-quote {
+  font-size: 6rem;
+}
+/* Reviews end */
+
+/* Experts start */
+.expert {
+  position: relative;
+  margin-bottom: 1rem;
+
+}
+
+/* .expert-image {
+  height: 60vh;
+} */
+
+.expert-info{
+  background-color: white;
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.expert-info h3 {
+  margin: 0.5rem 0;
+}
+
+.expert-info p {
+  color: #333;
+  font-weight: lighter;
+  margin: 1rem 0;
+}
+
+.expert-socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 1rem auto;
+  color: #0A66C2;
+}
+
+/* This changes the color of all the children, seek help */
+.expert-socials :last-child {
+  color: #55ACEE; 
+}
+/* Experts end */
+
 /* Footer style start */
 
 /* Footer style end */
@@ -297,27 +372,39 @@ header nav ul li {
 /* Specialities end */
 
 /* Menu start */
-.menu-container {
-  display: flex;
-  padding: 2rem;
-}
+  .menu-container {
+    display: flex;
+    padding: 2rem;
+  }
 
-.menu-title {
-  text-align: center;
-}
+  .menu-title {
+    text-align: center;
+  }
 
-.menu-item {
-  padding: 0 1rem 2.5rem 1rem;
-}
+  .menu-item {
+    padding: 0 1rem 2.5rem 1rem;
+  }
 
-.menu-item::after {
-  width: 75%;
-  margin: 0 auto;
-}
+  .menu-item::after {
+    width: 75%;
+    margin: 0 auto;
+  }
 
-.menu-item section h3 span {
-  margin-left: 0.25rem;
-}
+  .menu-item section h3 span {
+    margin-left: 0.25rem;
+  }
 /* Menu end */
+/* Experts start */
+  .expert {
+    padding: 1rem;
+  }
 
+  .experts-container {
+    display: flex;
+    justify-content: space-around;
+  }
+/* Experts end */
 }
+
+/* start */
+/* end */
