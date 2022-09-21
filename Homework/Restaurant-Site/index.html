@@ -212,6 +212,30 @@
       </section>
     </section>
     <!-- Experts end -->
+    <!-- Reservation start-->
+    <section class='reservation'>
+      <picture>
+        <source srcset='./img/reservationSmall.png' media='(max-width: 600px)'>
+        <source srcset='./img/reservation.png'>
+        <img class='reservvation-image' src="reservationSmall.png" alt="">
+      </picture>
+      <section class='reservation-form-section'>
+        <h2 class='section-title'>Esperamos<span>Reservacion</span></h2>
+        <form name='reservation' action="">
+          <input type="text" name='reservation' id='text' placeholder='Nombre'/>
+          <input type="email" name='reservation' id='email' placeholder='Email' required/>
+          <input type="number" name='reservation' id='number' placeholder='Telefono'>
+          <div class='half-input'>
+            <input class='form-input-half' type="text" name='reservation' id='date' placeholder='Fecha'>
+            <input class='form-input-half' type="text" name='reservation' id='time' placeholder='Hora'>
+          </div>
+          <input type="text" placeholder='Cantidad de Personas' name="reservation" id="num-people">
+          <textarea name="" id="" cols="30" rows="10" name='reservation' id='message' placeholder='Mensaje'></textarea>
+          <input class='btn' type="submit" value='Encargar'>
+        </form>
+      </section>
+    </section>
+    <!-- Reservation end -->
   </main>
   <footer>
 
