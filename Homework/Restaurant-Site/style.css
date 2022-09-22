@@ -313,12 +313,6 @@ textarea {
   border-radius: 5px;
   border: none;
   color: #333;
-}
-
-input[type=text],
-input[type=email],
-input[type=number],
-textarea::placeholder {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
 }
@@ -356,7 +350,11 @@ input[type=submit]:hover {
 /* reservation end */
 
 /* Footer style start */
-
+.footer-container {
+  background-color: #333;
+  height: 100%;
+  padding: 1rem;
+}
 /* Footer style end */
 
 @media screen and (min-width: 640px) {
