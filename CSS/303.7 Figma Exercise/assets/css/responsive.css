@@ -1,0 +1,18 @@
+
+@media screen and (min-width:640px) {
+  .place-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .place {
+    margin: 1rem;
+    width: 25rem;
+  }
+
+  .place img {
+    width: 25rem;
+    height: 16rem;
+  }
+}

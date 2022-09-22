@@ -8,6 +8,65 @@
   overflow-x: hidden;
 }
 
+header {
+  text-align: center;
+  font-family: 'Poppins';
+  padding: 1rem;
+}
+
+.title::after {
+  content: "";
+  border-bottom: 1px dashed black;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Poppins';
+  padding: 1rem;
+}
+
+.place {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+  margin: 2rem 5rem;
+}
+
+.place img {
+  margin-bottom: 1rem;
+  height: auto;
+  width: auto;
+}
+
+.place-info{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins';
+}
+
+.place-info h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.place-info p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 4rem;
+}
+
+.maps {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 75px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 1rem 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
 /*
   Only your main styles here, any media queries in ./assets/css/responsive.css
   Card images can be found in ./assets/img/
