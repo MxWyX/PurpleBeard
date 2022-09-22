@@ -39,7 +39,7 @@ img {
   color: white;
   padding: 0.5rem 1.5rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 /* Header style start */
@@ -241,10 +241,6 @@ header nav ul li {
 
 }
 
-/* .expert-image {
-  height: 60vh;
-} */
-
 .expert-info{
   background-color: white;
   position: absolute;
@@ -283,6 +279,79 @@ header nav ul li {
 /* Experts end */
 
 /* Reservation start */
+.reservation {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.reservation-form-section {
+  position: absolute;
+  top: 30%;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 70%;
+}
+
+.reservation-form-section h2 {
+  color: white;
+  margin-bottom: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+  padding: 10px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: none;
+  color: #333;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+textarea {
+  resize: none;
+  height: 0;
+  min-height: 3rem;
+  font-size: 1.5rem;
+}
+
+.half-input {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
+}
+
+.form-input-half {
+  width: 50%;
+}
+
+.half-input :first-child {
+  margin-right: 1rem;
+}
+
+input[type=submit] {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  width: 45%;
+}
+
+input[type=submit]:hover {
+  background-color: #E76F51;
+}
 /* reservation end */
 
 /* Footer style start */
@@ -397,9 +466,10 @@ header nav ul li {
     margin-left: 0.25rem;
   }
 /* Menu end */
+
 /* Experts start */
   .expert {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
   }
 
   .experts-container {
@@ -408,8 +478,51 @@ header nav ul li {
   }
 /* Experts end */
 /* Reservation start */
-/* reservation end */
+.reservation-form-section {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 35%;
+  height: 115%;
+  margin-bottom: 2rem;
 }
 
-/* start */
-/* end */
+.reservation-form-section h2 span {
+  font-size: 1.25rem;
+}
+
+.reservation-form-section h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea::placeholder {
+  font-size: 1.25rem;
+}
+
+textarea {
+  height: 7rem;
+
+}
+
+input[type=submit] {
+  font-size: 1rem;
+}
+/* reservation end */
+
+/* footer start */
+
+/* footer end */
+}
