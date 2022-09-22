@@ -6,13 +6,17 @@
     justify-content: space-around;
   }
 
+  .title {
+    float: right;
+  }
+
   .place {
     margin: 1rem;
     width: 25rem;
   }
 
   .place img {
-    width: 25rem;
-    height: 16rem;
+    width: 100%;
+    height: 40%;
   }
 }
