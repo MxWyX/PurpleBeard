@@ -10,6 +10,10 @@
     float: right;
   }
 
+  h2 {
+    text-align: left;
+  }
+
   .place {
     margin: 1rem;
     width: 25rem;
