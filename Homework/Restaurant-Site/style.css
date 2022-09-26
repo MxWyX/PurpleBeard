@@ -9,7 +9,17 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-main,header {
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+header,
+.hero,
+.specialities,
+.menu,
+.testimony,
+.experts {
   padding: 1rem;
 }
 
@@ -281,16 +291,14 @@ header nav ul li {
 /* Reservation start */
 .reservation {
   position: relative;
-  margin-bottom: 1rem;
 }
 
 .reservation-form-section {
   position: absolute;
   top: 30%;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 3px;
   width: 100%;
-  height: 70%;
+  height: 69.5%;
 }
 
 .reservation-form-section h2 {
@@ -301,16 +309,16 @@ header nav ul li {
 form {
   display: flex;
   flex-direction: column;
-  margin: 1rem 1.5rem 1.5rem 1.5rem;
+  margin: 0.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 input[type=text],
 input[type=email],
 input[type=number],
 textarea {
-  padding: 10px;
-  margin-bottom: 2rem;
-  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+  border-radius: 3px;
   border: none;
   color: #333;
   font-family: 'Josefin Sans', sans-serif;
@@ -340,7 +348,7 @@ textarea {
 
 input[type=submit] {
   align-self: flex-end;
-  font-size: 1.5rem;
+  font-size: 1rem;
   width: 45%;
 }
 
@@ -350,10 +358,83 @@ input[type=submit]:hover {
 /* reservation end */
 
 /* Footer style start */
-.footer-container {
+footer {
   background-color: #333;
-  height: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.footer-info-p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand {
+  font-family: "Rancho", cursive;
+  font-size: 4rem;
+  display: block;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  font-size: 2.5rem;
+  margin: 1rem auto;
+}
+
+.footer-social a{
+  color: white;
+}
+
+.footer-title {
+  color: #E76F51;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.footer-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 3;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  border-bottom: 1px solid white;
+  width: 55%;
+}
+
+.footer-times {
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+.footer-times li {
+  padding-bottom: 1rem;
+}
+
+.footer-map {
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.footer-3 i {
+  font-size: 2rem;
+  margin: 0.25rem;
+}
+
+.direction {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
 }
 /* Footer style end */
 
@@ -400,6 +481,10 @@ input[type=submit]:hover {
 
   #hero-buttons {
     justify-content: flex-start;
+  }
+
+  .hero-info img {
+    margin-right: 7px;
   }
 
   #hero-image{
@@ -477,51 +562,60 @@ input[type=submit]:hover {
   }
 /* Experts end */
 /* Reservation start */
-.reservation-form-section {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 35%;
-  height: 115%;
-  margin-bottom: 2rem;
-}
+  .reservation {
+    margin-bottom: 5rem;
+  }
+  .reservation-form-section {
+    position: absolute;
+    top: 35px;
+    right: 65px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    width: 35%;
+    height: 105%;
+    margin-bottom: 2rem;
+  }
 
-.reservation-form-section h2 span {
-  font-size: 1.25rem;
-}
+  .reservation-form-section h2 span {
+    font-size: 1rem;
+  }
 
-.reservation-form-section h2 {
-  font-size: 3rem;
-  letter-spacing: 2px;
-}
+  .reservation-form-section h2 {
+    font-size: 2.5rem;
+    font-weight: light;
+  }
 
-input[type=text],
-input[type=email],
-input[type=number],
-textarea {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-}
+  input[type=text],
+  input[type=email],
+  input[type=number],
+  textarea {
+    margin-bottom: 1rem;
+    padding: 7px;
+    font-size: 1rem;
+  }
 
-input[type=text],
-input[type=email],
-input[type=number],
-textarea::placeholder {
-  font-size: 1.25rem;
-}
+  textarea {
+    height: 7rem;
+  }
 
-textarea {
-  height: 7rem;
-
-}
-
-input[type=submit] {
-  font-size: 1rem;
-}
+  input[type=submit] {
+    font-size: 1rem;
+  }
 /* reservation end */
 
 /* footer start */
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 2rem;
+  }
 
+  .footer-1,
+  .footer-2,
+  .footer-3 {
+    flex: 1 1 350px;
+  }
 /* footer end */
 }

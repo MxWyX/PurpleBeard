@@ -16,11 +16,11 @@
     <!-- Nav start -->
     <nav>
       <ul>
-        <li>contacto</li>
-        <li>Nosotros</li>
+        <a href="#contact"><li>Contacto</li></a>
+        <a href="#experts"><li>Nosotros</li></a>
         <li id='logo'>Resto</li>
-        <li>Menu</li>
-        <li>Reservacion</li>
+        <a href="#menu"><li>Menu</li></a>
+        <a href="#reservation"><li>Reservacion</li></a>
         <li id='burger-menu'><i class="fa-solid fa-bars"></i></li>
       </ul>
     </nav>
@@ -74,7 +74,7 @@
     </section>
     <!-- Specials end -->
     <!-- Menu start -->
-      <section class='menu'>
+      <section id='menu' class='menu'>
         <h2 class='section-title'>Menu <span>Veganisimo</span></h2>
         <section class='menu-container'>
           <section>
@@ -170,7 +170,7 @@
     </section>
     <!-- Reviews end -->
     <!-- Experts start -->
-    <section class='experts'>
+    <section id='experts' class='experts'>
       <h2 class='section-title'><span>Expertos</span>Nuestra Cocina</h2>
       <section class='experts-container'>
         <section class='expert'>
@@ -213,7 +213,7 @@
     </section>
     <!-- Experts end -->
     <!-- Reservation start-->
-    <section class='reservation'>
+    <section id='reservation' class='reservation'>
       <picture>
         <source srcset='./img/reservationSmall.png' media='(max-width: 600px)'>
         <source srcset='./img/reservation.png'>
@@ -239,7 +239,7 @@
   </main>
   <footer>
   <!-- Footer start -->
-    <section class='footer-container'>
+    <section id='contact' class='footer-container'>
       <section class='footer-1'>
         <p class='footer-info-p'>
           <span class='footer-brand'>Resto</span>
@@ -256,25 +256,28 @@
       <section class='footer-2'>
         <h2 class='footer-title'>Horarios</h2>
         <ul class='footer-times'>
-          <li>Monday 9:00 - 21:00</li>
-          <li>Tuesday 9:00 - 21:00</li>
-          <li>Wednesday 9:00 - 21:00</li>
-          <li>Thursday 9:00 - 21:00</li>
-          <li>Friday 9:00 - 21:00</li>
-          <li>Saturday 9:00 - 21:00</li>
-          <li>Sunday 9:00 - 21:00</li>
+          <li>Lunes       9:00 - 21:00</li>
+          <li>Martes      9:00 - 21:00</li>
+          <li>Miercoles   9:00 - 21:00</li>
+          <li>Jueves      9:00 - 21:00</li>
+          <li>Viernes     9:00 - 21:00</li>
+          <li>Sabado      9:00 - 21:00</li>
+          <li>Domingo     9:00 - 21:00</li>
         </ul>
         <h2 class='footer-title'>Telefono</h2>
-        <p>+54 351 7608573</p>
+        <p><i class="fa-solid fa-phone"></i> +54 351 7608573</p>
       </section>
       <section class='footer-3'>
         <h2 class='footer-title'>Direccion</h2>
-        <p class='direction'>Humberto Primo 771</p>
-        <p>Cordoba Capital, By Centro</p>
+        <i class="fa-solid fa-location-dot"></i>
+        <div class='direction'>
+          <p>Humberto Primo 771</p>
+          <p>Cordoba Capital, By Centro</p>
+        </div>
         <img class='footer-map' src="./img/map.png" alt="The location of the resturaunt on a map">
       </section>
     </section>
-    <p class='coptright'>2022 - Diseñado por Uncoder Diseño Web</p>
+    <p class='copyright'>2022 - Diseñado por Uncoder Diseño Web</p>
   <!-- Footer end -->
   </footer>
 </body>
