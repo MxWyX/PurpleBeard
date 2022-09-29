@@ -1,8 +1,4 @@
 
-body {
-  background-color: grey;
-}
-
 .wrapper {
   display: grid;
   grid-template-columns: 1fr, 2fr ,1fr, 1fr;
@@ -11,8 +7,13 @@ body {
 }
 
 .wrapper div {
-  background-color: white;
+  /* background-color: white; */
   padding: 1em;
+}
+
+.box {
+  background-color: grey;
+  border: 1px solid black;
 }
 
 .box1 {
