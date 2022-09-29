@@ -1,0 +1,35 @@
+
+body {
+  background-color: grey;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr, 2fr ,1fr, 1fr;
+  gap: 1em;
+  grid-auto-rows: minmax(100px,auto);
+}
+
+.wrapper div {
+  background-color: white;
+  padding: 1em;
+}
+
+.box1 {
+  align-self: flex-start;
+  grid-column: 1;
+}
+
+.box2 {
+  align-self: flex-end;
+  grid-column: 2 /span 2;
+}
+
+.box3 {
+  justify-self: end;
+  grid-column: 4;
+}
+
+.box4 {
+  align-self: center;
+}
