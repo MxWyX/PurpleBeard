@@ -1,6 +1,4 @@
 
-let a = 15;
-let b = 28;
 
 const calc = {
   print: function (a) {
@@ -40,3 +38,19 @@ calc.mod(3,9)
 
 calc.circle.area(4);
 calc.circle.circum(6);
+
+
+function heightTest() {
+  const height = prompt('What\'s your height');
+  if ( Number(height)+0) {
+    if (height >= 150) {
+      alert('You can go on the ride!');
+    } else {
+      alert('Sorry you aren\'t tall enough');
+    }
+  } else {
+    alert('Please enter a height');
+  }
+};
+
+heightTest();
