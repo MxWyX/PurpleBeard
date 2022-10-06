@@ -69,7 +69,7 @@
 //       return 'That operator is not valid';
 //     }
 //   } else {
-//     return 'One of those numbers, aren\'t numbers...';
+//     return 'One of those numbers, isn\'t a number...';
 //   }
 // };
 
@@ -88,7 +88,7 @@
 
 // Excersise 8
 
-// function pow(x,n) {
+// const pow = (x,n) => {
 //   return Math.pow(x,n);
 // }
 
