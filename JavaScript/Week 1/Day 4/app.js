@@ -1,14 +1,12 @@
 
-// Excersise 1
-// function helloWorld() {
+// // Excersise 1
+// (function helloWorld() {
 //   alert('Hello World!')
-// };
+// })();
 
-// helloWorld()
-
-// Excersise 2
+// // Excersise 2
 // function quadrupler(number) {
-//   return number*4
+//   return number*4;
 // };
 
 // alert(quadrupler(4))
@@ -77,6 +75,7 @@
 
 // Excersise 7
 // function min(a,b) {
+//
 //   if (a<b) {
 //     return a;
 //   } else {
