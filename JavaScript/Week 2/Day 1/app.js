@@ -102,3 +102,31 @@
 // }
 
 // console.log(sumInput(numbers));
+
+
+// Strings
+
+// Task 1
+
+// const addFullStop = (str) => {
+//   if (!str.endsWith('.')) {
+//     console.log(str+'.');
+//   } else {
+//     console.log(str);
+//   }
+// }
+
+// addFullStop('Hello world.');
+
+// Task 2
+
+const capitalize = (test) => {
+  if (typeof test !== 'string') {
+    return "This is not a string";
+  } else {
+    let final = test[0].toUpperCase() + test.slice(1).toLowerCase();
+    return final;
+  } 
+}
+
+console.log(capitalize('hellO'));
