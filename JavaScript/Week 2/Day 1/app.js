@@ -120,13 +120,13 @@
 
 // Task 2
 
-const capitalize = (test) => {
-  if (typeof test !== 'string') {
-    return "This is not a string";
-  } else {
-    let final = test[0].toUpperCase() + test.slice(1).toLowerCase();
-    return final;
-  } 
-}
+// const capitalize = (test) => {
+//   if (typeof test !== 'string') {
+//     return "This is not a string";
+//   } else {
+//     let final = test1[0].toUpperCase() + test.slice(1).toLowerCase();
+//     return final;
+//   } 
+// }
 
-console.log(capitalize('hellO'));
+// console.log(capitalize('hellO'));
