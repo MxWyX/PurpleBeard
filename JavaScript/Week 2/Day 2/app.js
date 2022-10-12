@@ -81,7 +81,7 @@
 
 // const inputArray = ["18", "27", 19, 21, "22 ", NaN, undefined];
 
-// let ages = inputArray.filter((arr) => );
+// let ages = inputArray.filter((arr) => arr > 0);
 
 // console.log(ages);
 
@@ -105,10 +105,10 @@
 
 // Task 11
 
-const numArray = [21, 16, 45, 32, 18, 17, 19, 55, 60];
+// const numArray = [21, 16, 45, 32, 18, 17, 19, 55, 60];
 
-const product = numArray.reduce((total, current) => {
-  return total * current;
-}, 1);
+// const product = numArray.reduce((total, current) => {
+//   return total * current;
+// }, 1);
 
-console.log(product);
+// console.log(product);
