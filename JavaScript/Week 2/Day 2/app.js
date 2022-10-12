@@ -82,6 +82,7 @@
 // const inputArray = ["18", "27", 19, 21, "22 ", NaN, undefined];
 
 // let ages = inputArray.filter((arr) => arr > 0);
+// let ages = inputArray.filter((arr) => parseInt(arr));
 
 // console.log(ages);
 
