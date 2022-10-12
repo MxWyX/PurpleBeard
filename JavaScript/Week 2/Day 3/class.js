@@ -17,6 +17,14 @@ class Media {
     return this._ratings;
   }
 
+  checkedOutStatus() {
+    if (this.isCheckedOut === true) {
+      return `${this.title} is currently checked out.`;
+    } else {
+      return `${this.title} is currently checked in.`;
+    }
+  }
+
   toggleCheckedOutStatus() {
     if (this.isCheckedOut === true) {
       this._isCheckedOut = false;
@@ -30,7 +38,12 @@ class Media {
       (rating, current) => rating + current,
       0
     );
-    return (ratingSum / this.ratings.length).toFixed(1);
+    let avg = (ratingSum / this.ratings.length).toFixed(1);
+    return `The average reviews for ${this._title} come to ${avg}.`;
+  }
+
+  getRatings() {
+    return `The reviews for ${this.title} are:\n${this.ratings.join(", ")}.`;
   }
 
   addRating(rating) {
@@ -52,6 +65,22 @@ class Book extends Media {
   get pages() {
     return this._pages;
   }
+
+  getAuthor() {
+    return `${this.title} was writen by ${this.author}.`;
+  }
+
+  getPageNum() {
+    return `${this.title} has ${this.pages} many pages`;
+  }
+
+  getInfo() {
+    let avg = this.getAverageRating();
+    let inOut = this.checkedOutStatus();
+    let auth = this.getAuthor();
+    let pageNum = this.getPageNum();
+    return `${inOut}\n${avg}\n${auth}\n${pageNum}`;
+  }
 }
 
 class Movie extends Media {
@@ -67,6 +96,22 @@ class Movie extends Media {
 
   get runTime() {
     return this._runTime;
+  }
+
+  getRunTime() {
+    return `${this.title} runs for ${this.runTime}.`;
+  }
+
+  getDirector() {
+    return `${this.director} is the director.`;
+  }
+
+  getInfo() {
+    let avg = this.getAverageRating();
+    let inOut = this.checkedOutStatus();
+    let RT = this.getRunTime();
+    let direct = this.getDirector();
+    return `${inOut}\n${avg}\n${RT}\n${direct}`;
   }
 }
 
@@ -85,7 +130,31 @@ class CD extends Media {
     let album = this._songs.join(", ");
     return album;
   }
+
+  getArtist() {
+    return `${this.title} was created by ${this.artist}.`;
+  }
+
+  getAlbum() {
+    return `The songs on the album are:\n${this.songs}`;
+  }
+
+  getInfo() {
+    let avg = this.getAverageRating();
+    let inOut = this.checkedOutStatus();
+    let art = this.getArtist();
+    let album = this.getAlbum();
+    return `${inOut}\n${avg}\n${art}\n${album}`;
+  }
 }
+
+// Create small function to add a random amount of ratings to an object
+const addRandomRatings = (title) => {
+  let amount = Math.floor(Math.random() * 20) + 5;
+  for (let i = 0; i < amount; i++) {
+    title.addRating(Math.floor(Math.random() * 5) + 1);
+  }
+};
 
 // Create Book
 const historyOfEverything = new Book(
@@ -95,23 +164,18 @@ const historyOfEverything = new Book(
 );
 //  Check Book out
 historyOfEverything.toggleCheckedOutStatus();
-console.log(historyOfEverything.isCheckedOut);
 // Add reviews and the get average
-historyOfEverything.addRating(3);
-historyOfEverything.addRating(2);
-historyOfEverything.addRating(5);
-console.log(historyOfEverything.getAverageRating());
+addRandomRatings(historyOfEverything);
+console.log(historyOfEverything.getInfo());
 
 // Create Movie
 const speed = new Movie("Speed", "Jan de Bont", 116);
 // Check Movie out
 speed.toggleCheckedOutStatus();
-console.log(speed.isCheckedOut);
 // Add reviews and get the average
-speed.addRating(2);
-speed.addRating(1);
-speed.addRating(5);
-console.log(speed.getAverageRating());
+addRandomRatings(speed);
+// Retrieve all the info we have on the film
+console.log(speed.getInfo());
 
 // Create CD
 const roomOnThe3rdFloor = new CD("Room on the 3rd floor", "McFly", [
@@ -126,11 +190,7 @@ const roomOnThe3rdFloor = new CD("Room on the 3rd floor", "McFly", [
 ]);
 // Check CD out
 roomOnThe3rdFloor.toggleCheckedOutStatus();
-console.log(roomOnThe3rdFloor.isCheckedOut);
 // Add reviews and get the average
-roomOnThe3rdFloor.addRating(4);
-roomOnThe3rdFloor.addRating(4);
-roomOnThe3rdFloor.addRating(5);
-console.log(roomOnThe3rdFloor.getAverageRating());
-// Get the songs on the album
-console.log(roomOnThe3rdFloor.songs);
+addRandomRatings(roomOnThe3rdFloor);
+// Get all the info and songs on the album
+console.log(roomOnThe3rdFloor.getInfo());
