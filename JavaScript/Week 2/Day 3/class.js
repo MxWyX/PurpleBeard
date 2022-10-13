@@ -134,7 +134,7 @@ class CD extends Media {
   }
 
   getArtist() {
-    return `${this.title} was created by ${this.artist}.`;
+    return `${this.title} was performed by ${this.artist}.`;
   }
 
   getAlbum() {
@@ -150,7 +150,7 @@ class CD extends Media {
   }
 }
 
-// Create small function to add a random amount of ratings to an object
+// A small function to add a random amount of ratings to an object
 const addRandomRatings = (title) => {
   let amount = Math.floor(Math.random() * 20) + 5;
   for (let i = 0; i < amount; i++) {
@@ -158,26 +158,27 @@ const addRandomRatings = (title) => {
   }
 };
 
+// Create one object from each class
+
 // Create Book
-const historyOfEverything = new Book(
-  "A Short History Of Nearly Everything",
-  "Bill Bryson",
-  554
-);
+const theWreckers = new Book("The Wreckers", "Ian Lawrence", 386);
 //  Check Book out
-historyOfEverything.toggleCheckedOutStatus();
-// Add reviews and the get average
-addRandomRatings(historyOfEverything);
-console.log(historyOfEverything.getInfo());
+theWreckers.toggleCheckedOutStatus();
+// Add reviews and get all info on the book
+addRandomRatings(theWreckers);
+console.log(theWreckers.getInfo());
 
 // Create Movie
-const speed = new Movie("Speed", "Jan de Bont", 116);
+const scottPilgrimVsTheWorld = new Movie(
+  "Scott Pilgrim Vs The World",
+  "Edgar Wright",
+  112
+);
 // Check Movie out
-speed.toggleCheckedOutStatus();
-// Add reviews and get the average
-addRandomRatings(speed);
-// Retrieve all the info we have on the film
-console.log(speed.getInfo());
+scottPilgrimVsTheWorld.toggleCheckedOutStatus();
+// Add reviews and get all info on the movie
+addRandomRatings(scottPilgrimVsTheWorld);
+console.log(scottPilgrimVsTheWorld.getInfo());
 
 // Create CD
 const roomOnThe3rdFloor = new CD("Room on the 3rd floor", "McFly", [
@@ -192,7 +193,6 @@ const roomOnThe3rdFloor = new CD("Room on the 3rd floor", "McFly", [
 ]);
 // Check CD out
 roomOnThe3rdFloor.toggleCheckedOutStatus();
-// Add reviews and get the average
+// Add reviews and get all the info on the CD
 addRandomRatings(roomOnThe3rdFloor);
-// Get all the info and songs on the album
 console.log(roomOnThe3rdFloor.getInfo());
