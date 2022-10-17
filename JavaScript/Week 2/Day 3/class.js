@@ -22,6 +22,10 @@ class Media {
     return this._creator;
   }
 
+  set addRating(rating) {
+    this.ratings.push(rating);
+  }
+
   checkedOutStatus() {
     if (this.isCheckedOut === true) {
       return `${this.title} is currently checked out.`;
@@ -49,10 +53,6 @@ class Media {
 
   getRatings() {
     return `The reviews for ${this.title} are:\n${this.ratings.join(", ")}.`;
-  }
-
-  addRating(rating) {
-    this.ratings.push(rating);
   }
 }
 
@@ -165,7 +165,7 @@ const theWreckers = new Book("The Wreckers", "Ian Lawrence", 386);
 //  Check Book out
 theWreckers.toggleCheckedOutStatus();
 // Add reviews and get all info on the book
-addRandomRatings(theWreckers);
+theWreckers.addRating = addRandomRatings();
 console.log(theWreckers.getInfo());
 
 // Create Movie
