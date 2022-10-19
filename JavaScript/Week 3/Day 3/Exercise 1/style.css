@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+h1 {
+  width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+#button {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  color: white;
+  border: 0px;
+  border-radius: 4px;
+  background-color: rgb(63, 146, 255);
+}
+
+#button:hover {
+  background-color: rgb(6, 91, 202);
+}
+
+.hide {
+  display: none;
+}
+
+#dynamicContent {
+  width: 80%;
+  height: 30%;
+  border: 1px solid blue;
+  border-radius: 3px;
+  margin: 1rem;
+  padding: 0.25rem;
+}
