@@ -1,6 +1,6 @@
 const Conv = {
-  _pound: 0.8,
-  _dollar: 1.2,
+  _pound: 0.89,
+  _dollar: 1.13,
   get pound() {
     return this._pound;
   },
@@ -9,15 +9,15 @@ const Conv = {
   },
 };
 
-document.querySelector("#logIn").addEventListener("submit", attempt);
-
-let usd = document.querySelector("#USD").value;
-document.querySelector("#GBP").value = usd * Conv.pound;
+document.querySelector("#convert").addEventListener("submit", attempt);
 
 function attempt(event) {
   event.preventDefault();
-  const amount = document.querySelector("#amount");
-  const show = document.querySelector("#answer");
-  let answer = amount;
-  document.querySelector("#convert").classList.toggle("hide");
+  document.querySelector("#final").removeChild(ans);
+  const gbp = document.querySelector("#GBP").value;
+  const usd = gbp * Conv.dollar;
+  let ans = document.createElement("p");
+  ans.textContent = `$${usd.toFixed(2)}`;
+  document.querySelector("#final").appendChild(ans);
+  document.querySelector("#final").classList.toggle("hide");
 }

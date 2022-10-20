@@ -10,15 +10,12 @@
   <body>
     <h1>Event Listeners III</h1>
     <section class='container'>
-      <form action="submit" id='logIn' class='form'>
+      <form action="submit" id='convert' class='form'>
         <label for="GBP">GBP:</label>
-        <input type="number" id='GBP'>
-        <label for="GBP">USD:</label>
-        <input type="number" id='USD'>
+        <input type="number" step='0.01' id='GBP'>
         <button type='submit' id='submit'>Submit</button>
       </form>
-      <section id='convert' class='answer hide'>
-        <p></p>
+      <section id='final' class='answer hide'>
       </section>
     </section>
     <script src="./app.js"></script>
