@@ -20,9 +20,14 @@ function attempt() {
   console.log(userData);
 }
 
-document.querySelector("show").addEventListener("click", show);
+let hidden = document.querySelector("show");
+
+console.log(typeof hidden);
+
+hidden.addEventListener("click", show);
 
 const show = () => {
+  debugger;
   let data = sessionStorage.getItem("userData");
   data = JSON.parse(data);
   document.querySelector(".display").textContent = data;
