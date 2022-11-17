@@ -108,3 +108,9 @@ if (!localStorage.getItem("MoviedataStored")) {
 } else {
   funcCreateCards();
 }
+
+
+function mode(arr) = {
+  let sum = arr.reduce((partialSum, a) => partialSum + a, 0);
+  return sum/arr.length;
+}
