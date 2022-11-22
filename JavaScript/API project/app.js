@@ -29,7 +29,6 @@ const swapCoords = (city) => {
 };
 
 const getWeather = (coords, city) => {
-  console.log(coords);
   let location = fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${coords[0]}&lon=${coords[1]}&appid=${api}`
   ).then((resp) => {
