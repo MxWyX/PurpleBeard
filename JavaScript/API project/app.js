@@ -14,6 +14,7 @@ const swapCoords = (city) => {
     resp
       .json()
       .then((json) => {
+        console.log(json);
         if (json[0].lon < 0) {
           getWeather([-json[0].lat, 180 + json[0].lon], city);
         } else {
