@@ -1,6 +1,6 @@
 import React from "react";
 
-function Task1(customer) {
+function Task1({ customer }) {
   return (
     <>
       <p>First name: {customer.first_name}</p>
