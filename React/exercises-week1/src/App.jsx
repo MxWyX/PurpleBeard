@@ -1,8 +1,10 @@
 import "./App.css";
 // import Task1 from "./Components/Task1";
 // import Task2 from "./Components/Task2";
-import Cards from "./Components/Cards";
-import "./Components/Cards.css";
+// import Cards from "./Components/Cards";
+// import "./Components/Cards.css";
+import Task3 from "./Components/Task3";
+import Task4 from "./Components/Task4";
 
 function App() {
   // // Task 1
@@ -15,18 +17,23 @@ function App() {
   // //
 
   return (
-    <div className="cardFlex">
+    <div>
       {/* <Task1 customer={customer} />
       <Task2 animals={animals} /> */}
 
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
+      {/* <div className="cardFlex">
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+      <div/> */}
+
+      <Task3 />
+      <Task4 />
     </div>
   );
 }

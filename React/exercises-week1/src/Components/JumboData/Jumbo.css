@@ -1,0 +1,19 @@
+
+.jumbo {
+  height: 200px;
+  width: 400px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.jumbo h1,h2,p {
+  margin: 0.25rem;
+}
+
+.jumbo button {
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
